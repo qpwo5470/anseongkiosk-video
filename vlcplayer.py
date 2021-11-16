@@ -11,7 +11,7 @@ from os import walk
 from os.path import join
 
 playlist = []
-for (dirpath, dirnames, filenames) in walk('/home/linero/videos'):
+for (dirpath, dirnames, filenames) in walk('/home/linaro/videos'):
     playlist.extend([join(dirpath,filename) for filename in filenames])
     break
 print(playlist)
